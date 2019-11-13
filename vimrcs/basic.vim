@@ -327,6 +327,13 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+" Line number shit
+set number relativenumber
+augroup numbertoggle 
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave    * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter      * set norelativenumber
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

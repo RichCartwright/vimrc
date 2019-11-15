@@ -335,6 +335,7 @@ augroup numbertoggle
     autocmd BufLeave,FocusLost,InsertEnter      * set norelativenumber
 augroup END
 
+set ruler
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

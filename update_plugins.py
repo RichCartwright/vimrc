@@ -56,7 +56,7 @@ lightline-ale https://github.com/maximbaz/lightline-ale
 vim-abolish https://github.com/tpope/tpope-vim-abolish
 vim-markdown https://github.com/plasticboy/vim-markdown
 comfortable-motion.vim https://github.com/yuttie/comfortable-motion.vim
-vimtex https://github.com/larvag/vimtex
+vimtex https://github.com/lervag/vimtex
 syntastic https://github.com/vim-syntastic/syntastic
 ag.vim https://github.com/rking/ag.vim
 """.strip()

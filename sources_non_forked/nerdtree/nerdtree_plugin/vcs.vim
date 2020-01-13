@@ -28,6 +28,14 @@ function! s:ToggleTabTreeVCS(name)
     call g:NERDTreeCreator.toggleTabTree(empty(l:path) ? '' : l:path._str())
 endfunction
 
+" FUNCTION: s:ToggleTabTreeVCS(a:name) {{{1
+" Behaves the same as ToggleTabTree except roots directory at VCS root
+function! s:ToggleTabTreeVCS(name)
+    let l:path = g:NERDTreeCreator._pathForString(a:name)
+    let l:path = s:FindParentVCSRoot(l:path)
+    call g:NERDTreeCreator.toggleTabTree(empty(l:path) ? "" : l:path._str())
+endfunction
+
 " FUNCTION: s:FindParentVCSRoot(a:path) {{{1
 " Finds the root version control system folder of the given path. If a:path is
 " not part of a repository, return the original path.

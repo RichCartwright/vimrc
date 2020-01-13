@@ -7,6 +7,7 @@
     in an unordered list.  The format is:
         - **.PATCH**: Pull Request Title (PR Author) [PR Number](Link to PR)
 -->
+<<<<<<< HEAD
 #### 6.4
 - **.3**: Fix regex that finds keyword for minimal menu. (PhilRunninger) [#1075](https://github.com/preservim/nerdtree/pull/1075)
 - **.2**: Lint vimscript, fix errors and warnings, add CI job to review PRs (Caleb Maclennan) [#1071](https://github.com/preservim/nerdtree/pull/1071)
@@ -17,6 +18,13 @@
 #### 6.2
 - **.1**: Menu option, 'copy path to clipboard' is aware of VIM clipboard option (jhzn) [#1056](https://github.com/preservim/nerdtree/pull/1056)
 - **.0**: Support tab-specific CWDs (PhilRunninger) [#1032](https://github.com/preservim/nerdtree/pull/1032)
+=======
+#### 6.3
+- **.0**: Add new command that behaves like NERDTreeToggle but defaults to the root of a VCS repository. (willfindlay) [#1060](https://github.com/scrooloose/nerdtree/pull/1060)
+#### 6.2
+- **.1**: Menu option, 'copy path to clipboard' is aware of VIM clipboard option (jhzn) [#1056](https://github.com/scrooloose/nerdtree/pull/1056)
+- **.0**: Support tab-specific CWDs (PhilRunninger) [#1032](https://github.com/scrooloose/nerdtree/pull/1032)
+>>>>>>> 64e2ecce09cb905ee2a47a44bcdb37eae4dfd2cb
 #### 6.1
 - **.4**: Add VIM built-in package management to read me file. (pesarkhobeee) [#1049](https://github.com/preservim/nerdtree/pull/1049)
 - **.3**: Save/Set screen state also on WinLeave and WinEnter. (PhilRunninger) [#1048](https://github.com/preservim/nerdtree/pull/1048)

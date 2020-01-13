@@ -368,13 +368,22 @@ endfunction
 " FUNCTION: NERDTreeCopyPath() {{{1
 function! NERDTreeCopyPath()
     let l:nodePath = g:NERDTreeFileNode.GetSelected().path.str()
+<<<<<<< HEAD
     if has('clipboard')
         if &clipboard ==# 'unnamedplus'
+=======
+    if has("clipboard")
+        if &clipboard == "unnamedplus"
+>>>>>>> 64e2ecce09cb905ee2a47a44bcdb37eae4dfd2cb
             let @+ = l:nodePath
         else
             let @* = l:nodePath
         endif
+<<<<<<< HEAD
         call nerdtree#echo('The path [' . l:nodePath . '] was copied to your clipboard.')
+=======
+        call nerdtree#echo("The path [" . l:nodePath . "] was copied to your clipboard.")
+>>>>>>> 64e2ecce09cb905ee2a47a44bcdb37eae4dfd2cb
     else
         call nerdtree#echo('The full path is: ' . l:nodePath)
     endif
